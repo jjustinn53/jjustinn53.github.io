@@ -4,11 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        p,
+        header,
+        nav,
+        a {
+            font-family: Roboto;
+        }
+        header {
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+            text-align: center;
+        }    
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+
+        a {
+            margin-right: 2%;
+            border-style: solid;
+            background-color: gray;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+
+            transition: transform 0.1s;
+        }
+
+        a:active {
+            transform: scale(0.95);
+        }
+
+        hr {
+            margin-top: 20%;
+        }
+    </style>
 </head>
 <body>
     <div>
         <header><h1>Team 14</h1></header>
-        <hr>
 
         <nav> 
             <a href="index.html">Home</a>
@@ -16,12 +58,16 @@
             <a href="contact.html">Contact</a>
         </nav>
 
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuNS2ahrN7YvAeFUV4v9YCPNzZu-6UwRYGt3JTBeDF-Vie9A/viewform?embedded=true" width="640" height="689" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
         <hr>
         <footer>
             <p>
                 CST336 Internet Programming. 2025&#169; Nguyen Rodriguez Romo Pham
             </p>
 
-            <img src="images/csumb.jpg" style="width: 100px;">
+            <img src="images/csumb.png" style="width: 100px;">
+
+
         </footer>
     </div>

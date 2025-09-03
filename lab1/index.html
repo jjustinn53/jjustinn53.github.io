@@ -3,11 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    p,
+    header,
+    nav,
+    a {
+        font-family: Roboto;
+    }
+    header {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+    }    
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    a {
+        margin-right: 2%;
+        border-style: solid;
+        background-color: gray;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+
+        transition: transform 0.1s;
+    }
+
+    a:active {
+        transform: scale(0.95);
+    }
+
+    .person-box {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 7%;
+        margin-right: 7%;
+        gap: 2%
+    }
+
+    .person {
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+        transition: transform 0.2s;
+    }
+
+    .person:hover {
+        transform: scale(1.1)
+    }
+
+    .person-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    hr {
+        margin-top: 20%;
+    }
+</style>
+
 </head>
 <body>
     <header><h1>Team 14</h1></header>
-    <hr>
+
 
     <nav> 
         <a href="index.html">Home</a>
@@ -16,23 +90,24 @@
     </nav>
 
     <div>
-        <div>
-            <img src="images/alberto.jpg" style="width: 300px;">
-            <p>Alberto</p>
+        <div class="person-box">
+            <div class="person">
+                <img src="images/alberto.jpg" class="person-img">
+                <p>Alberto</p>
+            </div>
+            <div class="person">
+                <img src="images/justin.jpg" class="person-img">
+                <p>Justin</p>
+            </div>
+            <div class="person">
+                <img src="images/xavier.jpeg" class="person-img">
+                <p>Xavier</p>
+            </div>
+            <div class="person">
+                <img src="images/richard.jpeg" class="person-img">
+                <p>Richard</p>
+            </div>
         </div>
-        <div>
-            <img src="images/justin.jpg" style="width: 300px;">
-            <p>Justin</p>
-        </div>
-        <div>
-            <img src="images/xavier.jpeg" style="width: 300px;">
-            <p>Xavier</p>
-        </div>
-        <div>
-            <img src="images/richard.jpeg" style="width: 300px;">
-            <p>Richard</p>
-        </div>
-
 
         <div>
             <p>Hey! Thanks for visting our website. We are computer science students at CSUMB. Check out our page!</p>
@@ -45,7 +120,7 @@
                 CST336 Internet Programming. 2025&#169; Nguyen Rodriguez Romo Pham
             </p>
 
-            <img src="images/csumb.jpg" style="width: 100px;">
+            <img src="images/csumb.png" style="width: 100px;">
         </footer>
     </div>
 
