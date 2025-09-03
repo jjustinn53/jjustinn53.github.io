@@ -14,15 +14,29 @@
         header,
         nav,
         a,
-        h3,
-        li {
+        footer {
             font-family: Roboto;
         }
+
         header {
             padding-bottom: 10px;
             margin-bottom: 0px;
             text-align: center;
-        }    
+        }
+
+        footer {
+            font-size: 13px;
+            color: navy;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-text {
+            margin: 0px;
+        }   
         
         nav {
             display: flex;
@@ -128,9 +142,13 @@
 
     <hr>
     <footer>
-        <p>
-            CST336 Internet Programming. 2025&#169; Nguyen, Rodriguez, Romo, Pham
-        </p>
+            <p class="footer-text">
+                CST336 Internet Programming. 2025&#169; Nguyen, Rodriguez, Romo, Pham
+            </p>
+
+            <p class="footer-text">
+                Disclaimer: The information in this webpage is fictious. It is used for academic purposes only.
+            </p>
 
         <img src="images/csumb.png" alt="CSUMB Logo" class="logo">
     </footer>

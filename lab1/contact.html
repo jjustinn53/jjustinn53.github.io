@@ -13,14 +13,30 @@
         p,
         header,
         nav,
-        a {
+        a,
+        footer {
             font-family: Roboto;
         }
+
         header {
             padding-bottom: 10px;
             margin-bottom: 0px;
             text-align: center;
-        }    
+        }
+
+        footer {
+            font-size: 13px;
+            color: navy;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-text {
+            margin: 0px;
+        }
         
         nav {
             display: flex;
@@ -51,10 +67,22 @@
 
         hr {
             margin-top: 20%;
+            margin-bottom: 2%;
         }
 
         .logo {
             width: 15%;
+        }
+
+        .form-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .google-form {
+            width: 50%;
+            height: 600px;
+            border: solid;
         }
     </style>
 </head>
@@ -68,12 +96,19 @@
             <a href="contact.html" class="contact">Contact</a>
         </nav>
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuNS2ahrN7YvAeFUV4v9YCPNzZu-6UwRYGt3JTBeDF-Vie9A/viewform?embedded=true" width="640" height="689" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+        <div class="form-box">
+            <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeuNS2ahrN7YvAeFUV4v9YCPNzZu-6UwRYGt3JTBeDF-Vie9A/viewform?embedded=true">
+            </iframe>
+        </div>
+        
         <hr>
         <footer>
-            <p>
+            <p class="footer-text">
                 CST336 Internet Programming. 2025&#169; Nguyen, Rodriguez, Romo, Pham
+            </p>
+
+            <p class="footer-text">
+                Disclaimer: The information in this webpage is fictious. It is used for academic purposes only.
             </p>
 
             <img src="images/csumb.png" alt="CSUMB Logo" class="logo">
@@ -81,3 +116,4 @@
 
         </footer>
     </div>
+</body>
