@@ -1,0 +1,26 @@
+.about {
+            border: none;
+            scale: 1.1;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+table {
+    border: solid;
+    width: 200px;
+    text-align: center;
+    display: flex;
+}
+
+td {
+    border: solid;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin-bottom: 0px;
+}
