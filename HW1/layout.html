@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+            body {
+                color: #0d2b50;
+                margin-bottom: 250px;
+            }
+            .info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                margin-top: 60px;
+                height: 500px;
+                margin-bottom: 200px;
+            }
+            
+            .section-header {
+                margin-top: 0px;
+                font-size: 40px;
+            }
+
+            .section-desc {
+                font-size: 25px;
+            }
+
+            .method-info {
+                margin: 0px;
+                font-size: 25px;
+            }
+
+            .right-section-info {
+                border: solid;
+                margin-right: 40px;
+                margin-left: 50px;
+                height: 500px;
+                width: 600px;
+            }
+
+            .example {
+                width: 600px;
+                object-fit: contain;
+            }
+
+            .layout-method {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            
+            .method-name,
+            .method-info{
+                margin-top: 50px;
+                font-size: 25px;
+                margin-bottom: 5px;
+            }
+
+     </style>
+</head>
+<body>
+        <header class="content">
+        <div class="left-section">
+            <img src="/lab1/images/csumb.png" alt="CSUMB Logo" class="logo">
+        </div>
+
+        <nav class="right-section"> 
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="selectors.html" class="nav-button">Selectors</a>
+            <a href="boxmodel.html" class="nav-button">Box Model</a>
+            <a href="layout.html" class="nav-button">Layout</a>
+        </nav>
+
+    </header>
+    <hr>
+
+    <div class="content">
+        <div class="info">
+            <section class="left-section-info">
+                <h2 class="section-header">CSS Layout</h2>
+                <p class="section-desc">CSS Layout methods help arrange elements on a web page.</p>
+
+                <section class="layout-method">
+                    <h3 class="method-name">Flexbox</h3>
+                    <p class="method-info">Arrange items in one direction (rows or columns) with flexible sizes.</p>
+                </section>
+
+                <section class="layout-method">
+                    <h3 class="method-name">Grid</h3>
+                    <p class="method-info">Two-dimensional layout with rows and columns</p>
+                </section>
+            </section>
+            
+
+            <section class="right-section-info">
+                <img src="" alt="CSS Layout Example" class="example">
+            </section>
+        </div>
+    </div>
+</body>
+</html>

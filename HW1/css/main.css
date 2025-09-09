@@ -1,0 +1,42 @@
+    body {
+        font-family: Roboto, Arial;
+        margin: 0px;
+    }
+
+    .content {
+        margin-left: 60px;
+    }
+
+    hr {
+        margin: 0px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 60px;
+        margin: 0px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .nav-button {
+        font-size: 17px;
+        text-decoration: none;
+        margin-right: 30px;
+
+        color: #0d2b50;
+    }
+
+    .nav-button:hover {
+        color: #917647;
+        text-decoration: underline;
+        text-decoration-color: gray;
+        text-underline-offset: 5px;
+
+    }
