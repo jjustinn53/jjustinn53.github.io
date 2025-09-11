@@ -1,0 +1,44 @@
+body {
+    color: #0d2b50;
+    margin-bottom: 250px;
+}
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 60px;
+    height: 500px;
+    margin-bottom: 200px;
+}
+            
+.section-header {
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+.section-desc {
+    font-size: 25px;
+}
+
+.selector-name {
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.selector-info {
+    font-size: 25px;
+}
+
+.right-section-info {
+    border: solid;
+    margin-right: 40px;
+    margin-left: 50px;
+    height: 700px;
+    width: 600px;
+}
+
+.example {
+    width: 600px;
+    object-fit: contain;
+}

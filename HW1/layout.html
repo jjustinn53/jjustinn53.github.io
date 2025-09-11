@@ -6,63 +6,12 @@
     <title>Layout</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
 
-    <style>
-            body {
-                color: #0d2b50;
-                margin-bottom: 250px;
-            }
-            .info {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-                margin-top: 60px;
-                height: 500px;
-                margin-bottom: 200px;
-            }
-            
-            .section-header {
-                margin-top: 0px;
-                font-size: 40px;
-            }
-
-            .section-desc {
-                font-size: 25px;
-            }
-
-            .method-info {
-                margin: 0px;
-                font-size: 25px;
-            }
-
-            .right-section-info {
-                border: solid;
-                margin-right: 40px;
-                margin-left: 50px;
-                height: 500px;
-                width: 600px;
-            }
-
-            .example {
-                width: 600px;
-                object-fit: contain;
-            }
-
-            .layout-method {
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-                align-items: flex-start;
-            }
-            
-            .method-name,
-            .method-info{
-                margin-top: 50px;
-                font-size: 25px;
-                margin-bottom: 5px;
-            }
-
-     </style>
 </head>
 <body>
         <header class="content">
@@ -88,18 +37,18 @@
 
                 <section class="layout-method">
                     <h3 class="method-name">Flexbox</h3>
-                    <p class="method-info">Arrange items in one direction (rows or columns) with flexible sizes.</p>
+                    <p class="method-info">Arrange items in a single direction—either rows or columns—while allowing them to flexibly grow, shrink, and align within the container..</p>
                 </section>
 
                 <section class="layout-method">
                     <h3 class="method-name">Grid</h3>
-                    <p class="method-info">Two-dimensional layout with rows and columns</p>
+                    <p class="method-info">A two-dimensional layout system that organizes content into rows and columns, giving precise control over both horizontal and vertical placement.</p>
                 </section>
             </section>
             
 
             <section class="right-section-info">
-                <img src="" alt="CSS Layout Example" class="example">
+                <img src="images/flexbox_grid_example.png" alt="CSS Layout Example" class="example">
             </section>
         </div>
     </div>
