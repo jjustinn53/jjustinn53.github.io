@@ -1,0 +1,71 @@
+body {
+    font-family: Boldonse, Arial;
+    background-image: url("../img/guessNumber.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winLoss {
+    border: solid;
+    padding: 10px;
+    display: flex;
+    column-gap: 10px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.guesses {
+    display: flex;
+    justify-content: center;
+}
+
+#guessBtn,
+#resetBtn {
+    width: 100px;
+    height: 50px;
+    font-family: Boldonse, Roboto;
+    background-color: white;
+}
+
+#guessBtn:hover,
+#resetBtn:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+#guessBtn:active,
+#resetBtn:active {
+    scale: 0.95;
+}
+
+#playerGuess {
+    width: 50px;
+    height: 30px;
+}
+
+.playerGuessBox {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.guesses {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
