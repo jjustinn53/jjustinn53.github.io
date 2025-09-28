@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock, Paper, Scissors </title>
+        <meta charset="utf-8">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/script.js" defer></script>
+
+    </head>
+    <body>
+
+        <header>
+            <h1>Rock, Paper, Scissors!</h1>
+            <h2>Make your choice!</h2>
+        </header>
+        <br>
+        <div id="main">
+            <div class="choiceBox">
+                <button value="Rock" id="rock">👊</button>
+                <button value="Paper" id="paper">🤚</button>   
+                <button value="Scissors" id="scissors">✌️</button>   
+            </div>
+                     
+            <div id="feedback"></div>
+        </div>
+        
+        <div class="winLoss">
+            <h3 id="wins"></h3>
+            <h3 id="losses"></h3>
+            <h3 id="draw"></h3>
+        </div>
+
+        <button id="playAgain">Play Again!</button>
+    </body>
+</html>
