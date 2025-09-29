@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <h1>
+        <img src="img/49erss.png" alt="49ers" id="niners">
+        49ERS QUIZ</h1>
+
+    <div class="questionBox">
+        <p id="timesTaken"></p>
+
+        <div class="question1">
+            <h2 class="question">What city are the 49ers from? <span id="a1-results"></span></h2>
+            <input id="a1" type="text">
+        </div>
+
+
+        <div class="question2">
+            <label class="question" for="question2">What city do the 49ers play in? <span id="a2-results"></span></label>
+            <label for="sj">
+                <input type="radio" id="sj" name="cities" value="sj">
+                San Jose
+            </label>
+
+            <label for="sc">
+                <input type="radio" id="sc" name="cities" value="sc">
+                Santa Clara
+            </label>
+
+            <label for="sf">
+                <input type="radio" id="sf" name="cities" value="sf">
+                San Francisco
+            </label>
+        </div>
+
+            
+        <div class="question3">
+            <h2 class="question">Which ones are the 49ers current quarterbacks? <span id="a3-results"></span></h2>
+            <label for="as">
+                <input type="checkbox" id="as" name="players" value="as">
+                Alex Smith
+            </label>
+
+            <label for="ck">
+                <input type="checkbox" id="ck" name="players" value="ck">
+                Colin Kaepernick
+            </label>
+
+            <label for="bp">
+                <input type="checkbox" id="bp" name="players" value="bp">
+                Brock Purdy
+            </label>
+
+            <label for="mj">
+                <input type="checkbox" id="mj" name="players" value="mj">
+                Mac Jones
+            </label>
+        </div>
+
+
+         <div class="question4">
+            <h2 class="question">How many Super Bowls have the 49ers won? <span id="a4-results"></span></h2>
+            
+            <label for="sb3"><input type="radio" id="sb3" name="superbowls" value="3"> 3</label>
+            <label for="sb4"><input type="radio" id="sb4" name="superbowls" value="4"> 4</label>
+            <label for="sb5"><input type="radio" id="sb5" name="superbowls" value="5"> 5</label>
+            <label for="sb6"><input type="radio" id="sb6" name="superbowls" value="6"> 6</label>
+        </div>
+
+        <div class="question5">
+            <h2 class="question">Who is the 49ers head coach? <span id="a5-results"></span></h2>
+            <label for="mcvay"><input type="radio" id="mcvay" name="coach" value="mcvay"> Sean McVay</label>
+            <label for="shanahan"><input type="radio" id="shanahan" name="coach" value="shanahan"> Kyle Shanahan</label>
+            <label for="mcdaniel"><input type="radio" id="mcdaniel" name="coach" value="mcdaniel"> Mike McDaniel</label>
+            <label for="harbaugh"><input type="radio" id="harbaugh" name="coach" value="harbaugh"> Jim Harbaugh</label>
+        </div>
+
+        <div>
+            <button id="submit">Submit</button>
+            <p id="score"></p>
+        </div>
+    </div> 
+    <script src="js/script.js"></script>
+</body>
