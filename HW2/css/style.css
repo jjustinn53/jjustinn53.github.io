@@ -60,6 +60,7 @@ header {
     
     font-size: 3rem;
     transition: scale 0.15s;
+    background-color: white;
 }
 
 #rock:hover,
@@ -84,4 +85,32 @@ header {
     height: 100px;
     margin-top: 10px;
     background-color: white;
+}
+
+.hand {
+  font-size: 80px;
+  text-align: center;
+  opacity: 1;
+  transform-origin: bottom center;
+}
+
+.hand.animate,
+.playerHand.animate {
+  opacity: 1;
+  animation: pump 0.8s ease-in-out 3;
+}
+
+#animated {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+
+@keyframes pump {
+  0% { transform: translateY(0) scale(1); }
+  25% { transform: translateY(-20px) scale(1.1); }
+  50% { transform: translateY(0) scale(1); }
+  75% { transform: translateY(-10px) scale(1.05); }
+  100% { transform: translateY(0) scale(1); }
 }

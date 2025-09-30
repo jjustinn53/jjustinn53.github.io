@@ -9,6 +9,8 @@ let wins = 0;
 let losses = 0
 let draw = 0;
 let choice;
+let handAnimation = document.querySelector("#handAnimation");
+let playerHandAnimation = document.querySelector("#playerHandAnimation");
 
 rock.addEventListener("click", function() {
     choice = rock.value;
@@ -27,7 +29,11 @@ scissors.addEventListener("click", function() {
 
 initializeGame();
 
-document.querySelector("#playAgain").addEventListener("click", initializeGame);
+document.querySelector("#playAgain").addEventListener("click", function() {
+    initializeGame();
+    handAnimation.textContent = "";
+    playerHandAnimation.textContent = "";
+});
 
 function initializeGame() {
     randomIndex = Math.floor(Math.random() * cpuChoices.length);
@@ -51,26 +57,41 @@ function initializeGame() {
 }
 
 function checkChoice(choice) {
-    if(choice == "Rock" & cpu == "Scissors" ||
-        choice == "Paper" & cpu == "Rock" ||
-        choice == "Scissors" & cpu == "Paper"
-    ) {
-        console.log("You win!");
-        feedback.textContent = "Good work! " + choice + " beats " + cpu + "!";
-        feedback.style.color = "darkgreen";
-        wins++;
-    } else if (choice == cpu) {
-        console.log("Tie!");
-        feedback.textContent = "Draw!";
-        feedback.style.color = "lightgreen";
-        draw++;
-    } else {
-        console.log("You lose!");
-        feedback.textContent = "Sorry! " + choice + " is beat by " + cpu + "!";
-        feedback.style.color = "darkred";
-        losses++;
-    }
-    gameOver();
+    playerHandAnimation.textContent = "👊";
+    playerHandAnimation.classList.add("animate");
+
+    handAnimation.textContent = "👊";
+    handAnimation.classList.add("animate");
+    
+    setTimeout(function() {
+        handAnimation.textContent = cpu === "Rock" ? "👊" : cpu === "Paper" ? "🤚" : "✌️"; 
+        playerHandAnimation.textContent = choice === "Rock" ? "👊" : choice === "Paper" ? "🤚" : "✌️"; 
+
+        playerHandAnimation.classList.remove("animate");
+        handAnimation.classList.remove("animate");
+        
+         
+        if(choice == "Rock" & cpu == "Scissors" ||
+            choice == "Paper" & cpu == "Rock" ||
+            choice == "Scissors" & cpu == "Paper"
+        ) {
+            console.log("You win!");
+            feedback.textContent = "Good work! " + choice + " beats " + cpu + "!";
+            feedback.style.color = "darkgreen";
+            wins++;
+        } else if (choice == cpu) {
+            console.log("Tie!");
+            feedback.textContent = "Draw!";
+            feedback.style.color = "lightgreen";
+            draw++;
+        } else {
+            console.log("You lose!");
+            feedback.textContent = "Sorry! " + choice + " is beat by " + cpu + "!";
+            feedback.style.color = "darkred";
+            losses++;
+        }
+        gameOver();
+    }, 1000);
 }
 
 function gameOver() {
