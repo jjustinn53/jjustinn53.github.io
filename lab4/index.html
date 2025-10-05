@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+    <h1>
+        <img src="img/csumb.png" alt="CSUMB" id="logo">
+         Sign Up Form 
+        </h1>
+
+    <fieldset>
+    <!-- <legend>Sign Up</legend> -->
+    <div class="firstLast">
+        <div id="name">
+            <label for="text">First Name</label>
+            <input type="text" id="firstName" placeholder="First Name">
+        </div>
+
+        <div id="name">
+            <label for="text">Last Name</label>
+            <input type="text" id="lastName" placeholder="Last Name">  
+        </div>
+    </div>
+    Email: <input type="text" id="email" placeholder="Email"><br> 
+    Phone Number:<input type="text" id="phoneNum" placeholder="Phone Number"><br>
+    Zip Code: <input type="text" id="zip" placeholder="Zip Code"><br>
+
+    <div class="location">
+        City: <p id="city"></p>
+        Latitude: <p id="latitude"></p>
+        Longitude: <p id="longitude"></p>
+
+    </div>
+    
+    <div class="stateCounty">
+        State:  <select id="stateSelector">
+            <option disabled selected >Select a State</option>
+        </select><br>
+        Select a County: <select id="countySelector">
+            <option disabled selected>Select a County</option>
+        </select><br>
+    </div>
+    
+    <div class="userPass">
+        Desired Username: <p id="avail" style="display: inline;"></p> <input type="text" id="username" placeholder="Username">
+        <p id="userError" style="color: red; display: none;">Your username must be at least 3 characters.</p><br>
+        Password: <button id="suggested" style="display: none;"></button> <input type="password" id="pass" placeholder="Password"> 
+        Type Password Again: <input type="password" id="passAgain" placeholder="Re-type Password">
+        <p id="passError" style="color: red;"></p><br>
+        <input type="submit" value="Sign Me Up" id="signUp">
+    </div>
+    </fieldset>
+</body>
+</html>
