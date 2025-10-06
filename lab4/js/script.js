@@ -16,7 +16,7 @@ submit.addEventListener("click", () => {
         userError.style.display = "none";
     }
 
-    if(!(password.value.length > 6)) {
+    if(password.value.length < 6) {
         passError.textContent = "Your password must be at least 6 characters.";
     } else {
         let retyped = document.querySelector("#passAgain");
